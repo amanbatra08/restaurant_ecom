@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="10dp">
+    <!--app:cardCornerRadius="10dp"
+    app:cardElevation="0dp"
+    app:cardBackgroundColor="#000000"-->
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        app:cardMaxElevation="10dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="170dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/logo"
+            android:contentDescription="@null"
+            android:scaleType="fitXY" />
+    </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            android:hint="Heading"
+            android:textSize="18dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/intro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="20%-40% Off"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/image"
+            android:layout_below="@+id/text"
+            android:textColor="#AF3027"
+            android:textColorHint="#AF3027"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:gravity="center"/>
+
+</LinearLayout>
+
